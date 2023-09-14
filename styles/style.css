@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#logo {
+  width: 135px;
+  height: 40px;
+}
+
+#doc {
+  width: 20px;
+  height: 24px;
+}
+
+#folder {
+  width: 24px;
+  height: 20px;
+}
+
+#upload {
+  width: 24px;
+  height: 16px;
+}
+
+button {
+  border: none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4rem;
+  background-image: url("/images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-color: hsl(229, 57%, 11%);
+  color: hsl(243, 100%, 93%);
+}
+
+main {
+  height: 20rem;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  align-items: flex-end;
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+main .card {
+  background-color: hsl(228, 56%, 26%);
+  box-shadow: 20px 15px 25px 10px hsl(229, 57%, 11%);
+}
+main .logo-icons {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 35rem;
+  row-gap: 3.6rem;
+  border-radius: 1rem;
+  border-top-right-radius: 10rem;
+}
+main .logo-icons #logo,
+main .logo-icons .icons {
+  margin-left: 4.1rem;
+}
+main .logo-icons .icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 17.5rem;
+}
+main .logo-icons .icons button {
+  background-color: hsl(229, 57%, 11%);
+  height: 4.8rem;
+  width: 4.8rem;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+main .logo-icons .icons button:hover {
+  background-color: hsl(243, 100%, 93%);
+}
+main .data {
+  height: 15rem;
+  width: 54rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-radius: 1rem;
+  position: relative;
+}
+main .data #text,
+main .data #total-gb,
+main .data #progress-bar {
+  width: 85%;
+  margin: 0 auto;
+}
+main .data p {
+  font-weight: 400;
+}
+main .data p span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+main .data #progress-bar {
+  background-color: hsl(229, 57%, 11%);
+  height: 1.8rem;
+  border-radius: 1rem;
+}
+main .data #progress-bar .used-bar {
+  width: 81.5%;
+  height: 1.4rem;
+  margin: 0.2rem;
+  border-radius: 1rem;
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+main .data #progress-bar .used-bar .circle {
+  width: 1rem;
+  height: 1rem;
+  margin: 0.2rem;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+main .data #total-gb {
+  display: flex;
+  justify-content: space-between;
+}
+main .data #total-gb p {
+  color: white;
+  font-size: 1.5rem;
+}
+main .data #gb-left {
+  position: absolute;
+  top: -35%;
+  right: 8%;
+  height: 7.2rem;
+  width: 17.8rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 1rem;
+}
+main .data #gb-left h1 {
+  font-size: 4.2rem;
+  font-weight: 700;
+  color: hsl(229, 57%, 11%);
+}
+main .data #gb-left h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: hsl(228, 56%, 26%);
+}
+main .data #gb-left .arrow-right {
+  height: 0;
+  width: 0;
+  border-bottom: 25px solid transparent;
+  border-right: 25px solid white;
+  position: absolute;
+  right: 0;
+  top: 6.4rem;
+}
+
+@media screen and (max-width: 925px) {
+  html {
+    font-size: 50%;
+  }
+  #doc {
+    width: 16px;
+    height: 20px;
+  }
+  #folder {
+    width: 20px;
+    height: 16px;
+  }
+  #upload {
+    width: 20px;
+    height: 12px;
+  }
+}
+@media screen and (max-width: 745px) {
+  body {
+    background-image: url("/images/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+  }
+  main {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
+  }
+  main .data #gb-left {
+    top: 90%;
+    right: 30%;
+    transform: translate(0%, -20%);
+  }
+  main .data #gb-left .arrow-right {
+    display: none;
+  }
+  main .card {
+    width: 90%;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=style.css.map */

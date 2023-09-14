@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="/images/favicon.svg" />
+    <link rel="stylesheet" href="/styles/style.css" />
+
+    <title>Fylo data storage</title>
+  </head>
+  <body>
+    <main>
+      <div class="logo-icons card">
+        <img src="/images/logo.svg" alt="Fylo Logo" id="logo" />
+        <div class="icons">
+          <button>
+            <img src="/images/icon-document.svg" alt="document" id="doc" />
+          </button>
+          <button>
+            <img src="/images/icon-folder.svg" alt="folder" id="folder" />
+          </button>
+          <button>
+            <img src="/images/icon-upload.svg" alt="upload" id="upload" />
+          </button>
+        </div>
+      </div>
+      <div class="data card">
+        <p id="text">You’ve used <span>815 GB</span> of your storage</p>
+        <div id="progress-bar">
+          <div class="used-bar">
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <div id="total-gb">
+          <p>0 GB</p>
+          <p>1000 GB</p>
+        </div>
+        <div id="gb-left">
+          <h1>185</h1>
+          <h2>GB Left</h2>
+          <div class="arrow-right"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
